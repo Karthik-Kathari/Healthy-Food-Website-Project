@@ -339,7 +339,7 @@
     
     /* 97 */
     .section-testimonials{
-      background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(img/back-customers.jpg) ;
+      background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(Resourse/Img/back-customers.jpg) ;
       z-index:-1;
       color: #fff;
       display: flexbox;
