@@ -1,0 +1,507 @@
+    /* "*" using star symbol : The * in CSS means "everything." It is a way to apply a style to every single element on the webpage.  */
+    /* <!--83.Module--> */
+    *{ 
+      margin: 0%;
+      padding: 0%;
+      box-sizing: border-box;
+    }
+    /* <!--83.Module--> */
+    html{
+      background-color: white;
+      color: #555;
+      font-family: Lato,sans-serif;
+      font-weight: 300;
+      font-size:20px;
+      text-rendering:optimizeLegibility;
+      overflow-x: hidden;
+      scroll-behavior:smooth;
+    }
+
+    .row{
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    /* 85 module */
+    header{
+      background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url("img/hero.jpg");
+      background-attachment: fixed;
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
+      margin: 0%;
+    }
+    /* 85 */
+    .h1{
+      margin-top: 0px;
+      margin-bottom: 20px;
+      padding: 0;
+      color:  white;
+      font-size: 240%;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      word-spacing: 3px;
+    }
+    /* 85 */
+    .hero-text-box{
+      position: absolute;
+      width: 1140px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    /* 86 */
+    .btn:link,
+    .btn-visited,
+    input[type=submit]{
+    display: inline-block;         
+    padding: 10px 30px; 
+    text-decoration: none;            
+    font-weight: 300;      
+    border-radius: 200px; 
+    transition: background-color 0.6s, border 0.3s, color 0.3s;                                                          
+    }
+    /* 86 */
+    .btn-full:link,
+    .btn-full:visited,
+    input[type=submit]{
+      background-color: #e67e22;
+      color: #fff;
+      border: 1px solid #e67e22;
+      margin-right: 25px;
+    }
+    .btn-ghost:link,
+    .btn-ghost:visited{
+      border: 1px solid #e67e22;
+      color: orange;
+    }
+
+    .btn:hover,
+    .btn:active,
+    input[type=submit]{
+      background-color: #cf6d17;
+    } 
+    .btn-ghost:hover,
+    .btn-ghost:active{
+      border: 1px solid #e67e22;
+      color: white;
+    }
+    .btn-full:hover,
+    .btn-full:active{
+      border: 1px solid #e67e22;
+      color: white;
+    }
+
+    /* 87 */
+    .logo{
+      height: 130px;
+      width: auto;
+      float: left; 
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+    .main-nav{
+      float: right;
+      list-style: none;
+      margin-top: 30px;
+    }
+    .main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 90%;
+      border: 2px solid transparent;
+      padding: 5px 0px;
+      transition: boder-bottom  0.2s;
+      }
+    .main-nav li a:hover{
+    border-bottom: 2px solid #e67e22;
+    }
+    /* 89 */
+    section{
+      padding: 40px 0;
+    }
+    h2{
+      font-weight: bolder;
+      text-align: justify;
+      text-transform: uppercase;
+      font-size: 180%;
+      word-spacing: 2px;
+      text-align: center;
+      margin-bottom: 11px;
+      letter-spacing: 4px;
+    }
+    h2:after{
+      margin-top: 0%;
+      display: block;
+      height: 2px;
+      background-color: #e67e22;
+      content: "";
+      width: 120px;
+      margin: 0 auto;
+      margin-top: 30px;
+    
+    }
+    .long-copy{
+      line-height: 145%;
+      width: 70%;
+      text-align: center;
+      margin-left: 15%;
+    }
+    .box{
+    display: flex;
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Add space between cards */
+    margin: 0 auto; /* Ensure it's centered */
+    padding: 40px; /* Add some padding around */
+    }
+    h3{
+      font-weight: 400px;
+      text-transform: uppercase;
+      font-size: 110%;
+      margin-bottom: 10px;
+    }
+    .box p{
+      font-size: 100%;
+    line-height: 160%;
+    margin-bottom: 70px;
+    text-align:justify;
+    }
+    #rooww {
+      display: flex;
+      justify-content: center; /* Center the cards */
+      gap: 20px; /* Add space between cards */
+      margin: 0 auto; /* Ensure it's centered */
+      padding: 20px; /* Add some padding around */
+    } 
+
+    .icon-big{
+      font-size: 300%;
+      display: block;
+      color: #e67e22;
+      margin-bottom: 10px;
+    }
+    /* 90 */
+    .meal-showcase{
+      list-style: none;
+      width: 100%;
+      padding: 10px;
+    }
+    .meal-showcase li{
+      display: block;
+      float: left;
+      width: 25%;
+    }
+    .meal-photo{
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      transition: transform 3s,opacity 0.5s;
+    }
+    .meal-photo img{
+      width: 100%;
+      height: auto;
+      transform: scale(1.15);
+      background-color: black;
+      opacity: 0.5;
+      border-radius: 10%;
+      transition: transform 1s,opacity 0.5s;
+    }
+    .meal-photo img:hover{
+      transform: scale(1.03);
+      opacity: 2;
+    }
+
+    .clearfix{zoom:0.5}
+    .clearfix::after{
+      content: ".";
+      clear: both;
+      display: block;
+      height: 0;
+      visibility: hidden;
+    }
+    .section-meals{
+    padding: 0%;
+    }
+    .section-features .long-copy{
+      margin-bottom: 30px;
+    }
+
+    .steps-box:first-child{
+      text-align: center;
+      padding-right: 3%;
+      margin-top: 30px;
+    }
+
+    .steps-box:last-child{
+      padding-left: 3%;
+      margin-top: 70px;
+    }
+
+    .steps-box p{
+      font-weight: 600;
+      text-align: left;
+    }
+    .works-steps{
+      margin-top: 8px;
+      margin-bottom: 140px;
+    }
+
+    .howitworks{
+      margin-top: 20px;
+      padding-top: 40px;
+    }
+
+    .app-screen{
+    width: 60%;
+    box-shadow: 3px 3px 5px 6px rgb(105, 100, 100);
+    border-radius: 52px;
+    }
+    .works-steps div{
+      color: #e67e22;
+      border: 4px solid #e67e22;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      width: 55px;
+      height: 55px;
+      text-align: center;
+      padding: 5px;
+      float: left;
+      font-size: 150%;
+      margin-right: 20px;
+    }
+    .btn-app:link,
+      .btn-app:visited{
+        border: transparent ;
+    }
+
+    .btn-app img{
+      height: 50px;
+      width: auto;
+      display: flexbox;
+      justify-content: space-around;
+      margin-top: 10px;
+      margin-right: 100px;
+    }
+    .section-steps{
+      background-color: whitesmoke;
+    }
+      .box img{
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        box-shadow: 2px 3px 6px 2px gray;
+        transition: transform 0.5s ease; /
+      }
+      .box img:hover{
+        transform:rotateY(19deg) rotateZ(1deg);;
+      }
+    
+    .city-feature{
+      margin-bottom: 5px;
+    }
+
+    .icon-small{
+      display: inline-blocks;
+      width: 30px;
+      font-size: 120%;
+      text-align: center;
+      line-height: 120%;
+      vertical-align: middle;
+      color: #e67e22;
+      margin-top: -5px;
+      margin-right: 10px;
+    }
+
+    a:link,
+    a:visited{
+      color: #e67e22;
+      text-decoration: none;
+      border-bottom: 1px solid #e67e22;
+      padding-bottom: 1px ;
+    }
+    a:hover,
+    a:active{
+      color: #555;
+      border-bottom: 1px solid transparent;
+      transition: border-bottom 0.2s, color 0.5s ;
+    }
+    
+    /* 97 */
+    .section-testimonials{
+      background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(img/back-customers.jpg) ;
+      z-index:-1;
+      color: #fff;
+      display: flexbox;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    blockquote{
+      padding: 2%;
+      font-style: italic;
+      line-height: 145%;
+      margin-top: 50px;
+    }
+    cite{
+      font-size: 90%;
+      display: block;
+      margin-top: 30px;
+    }
+    cite img{
+      padding-right: 10px;
+      height: 45px;
+      border-radius: 50%;
+      margin-top: 2px;
+      vertical-align: middle;
+
+    }
+    blockquote:before{
+      content: '\201C';
+      font-size: 400%;
+      display: block;
+      margin-bottom: -10px;
+    }
+                              /* 99 */
+    .section-plans{
+      background-color: #f4f4f4;
+      
+    
+    }   
+
+  .plan-box{
+    
+    background-color: white; 
+    margin-left: 5%;
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 3px 2px 6px 3px gray; 
+    transition: transform 1s ease, border 0.5s ease;
+  }
+  .plan-box:hover{
+    transform:scale(1.01);
+    border: 1px #e67e22 solid;
+    box-shadow: 4px 3px 7px 7px gray;
+  }                                             
+
+  .plan-box div{
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+  }
+  .plan-price{
+    color: #e67e22;
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+  .plan-price-meal{
+    padding-bottom: 12px;
+    font-size: 90%;
+  }
+    .plan-box span{
+    font-size: medium;
+    }
+    .plan-box ,li ,ul{ 
+    padding: 1px 0px;
+    list-style-type: none;
+    line-height: 200%;
+  }
+  .plan-box div:last-child{
+    border: 0;
+    text-align: center;
+  }
+
+  .section-form, h2{
+    margin-bottom: 50px;
+  }
+
+  .contact-form{
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  input[type=text],
+  input[type=email],
+  select,
+  textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius:3px;
+    border:1px solid #ccc
+  }
+  textarea{
+  height: 100%;
+  }
+  input[type=checkbox]{
+    margin: 10px 5px 10px 0px;
+  }
+
+          /* 103 */
+  footer{
+    background-color: #333;
+    font-size: 80%;
+    padding: 50px;
+    
+  }
+  .footer-nav{
+    list-style: none;
+      float: left;  
+  }     
+  .social-link{
+    list-style: none;
+    float: right;
+    font-size: 20px;
+  }
+  .footer-nav li,
+  .social-link li{
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  .footer-nav li:last-child,
+  .social-link li{
+  margin: 0%;
+  padding-right: 30px;
+    }
+
+  .footer-nav li a:link,
+  .footer-nav li a:visited,
+  .social-link li a:link,
+  .social-link li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #979797;
+  }
+  .footer-nav li a:hover{
+    color: #ddd;
+  }
+  .footer p{
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 30px;
+  }
+
+  .fb:hover{
+    color: blue;
+  }
+  .insta:hover{
+    color: rgb(170, 59, 133);
+  }
+  .twitter:hover{
+    color: rgb(59, 124, 209);
+  }
+  .google:hover{
+    color: rgb(228, 81, 12);
+  }
